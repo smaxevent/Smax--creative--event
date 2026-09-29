@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smax Creative Events | Event Decoration & Planning</title>
+<meta name="description" content="Smax Creative Events — beautiful wedding, birthday, corporate and outdoor event decoration.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#222;background:#fff;line-height:1.6}
+:root{--gold:#c49a45;--dark:#17130f;--cream:#f8f3ea}
+header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(23,19,15,.96);backdrop-filter:blur(8px)}
+nav{max-width:1150px;margin:auto;height:75px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.logo{color:var(--gold);font-size:25px;font-weight:800;text-decoration:none}.logo span{color:#fff;display:block;font-size:11px;letter-spacing:4px;text-align:center}
+.nav-links{display:flex;list-style:none;gap:28px}.nav-links a{color:#fff;text-decoration:none;font-size:14px}.nav-links a:hover{color:var(--gold)}
+.menu{display:none;color:#fff;font-size:28px;cursor:pointer}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 20px 60px;color:#fff;background:linear-gradient(rgba(0,0,0,.63),rgba(0,0,0,.63)),url("92375.jpg") center/cover}
+.hero-content{max-width:800px}.hero small{color:#e4c47d;text-transform:uppercase;letter-spacing:5px;font-weight:bold}
+.hero h1{font-size:clamp(45px,7vw,82px);line-height:1.05;margin:18px 0}.hero h1 span{color:var(--gold)}
+.hero p{max-width:650px;margin:auto;font-size:18px;color:#eee}.buttons{margin-top:32px;display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 27px;border-radius:4px;text-decoration:none;font-weight:bold;transition:.3s;border:0;cursor:pointer}
+.btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:#a77e30;transform:translateY(-2px)}
+.btn-outline{border:1px solid #fff;color:#fff}.btn-outline:hover{background:#fff;color:#222}
+section{padding:90px 20px}.container{max-width:1150px;margin:auto}
+.section-heading{text-align:center;margin-bottom:50px}.section-heading small{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-weight:bold}
+.section-heading h2{font-size:42px;margin-top:8px}.section-heading p{max-width:650px;margin:12px auto;color:#666}
+.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-image{min-height:450px;border-radius:8px;background:url("92375.jpg") center/cover}
+.about-text h2{font-size:42px;margin-bottom:18px}.about-text h2 span{color:var(--gold)}.about-text p{color:#555;margin-bottom:16px}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.service-card{padding:35px 25px;border:1px solid #eee;text-align:center;transition:.3s;background:#fff}
+.service-card:hover{transform:translateY(-8px);box-shadow:0 15px 35px rgba(0,0,0,.1);border-color:var(--gold)}
+.service-icon{font-size:42px;margin-bottom:18px}.service-card h3{margin-bottom:10px;font-size:21px}.service-card p{color:#666;font-size:14px}
+.gallery{background:var(--cream)}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.gallery-item{height:280px;overflow:hidden;border-radius:5px}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.5s}.gallery-item:hover img{transform:scale(1.08)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}.why-card{padding:25px}.why-card strong{display:block;color:var(--gold);font-size:42px}.why-card h3{margin:8px 0}.why-card p{color:#666;font-size:14px}
+.cta{background:linear-gradient(rgba(20,15,10,.82),rgba(20,15,10,.82)),url("92375.jpg") center/cover;color:#fff;text-align:center}
+.cta h2{font-size:45px;margin-bottom:15px}.cta p{color:#ddd;max-width:650px;margin:auto}
+.contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact-info h2{font-size:40px;margin-bottom:20px}.contact-info p{margin-bottom:20px;color:#666}
+.contact-item{margin:15px 0}.contact-item strong{color:var(--gold)}
+form{background:#fff;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.06)}form input,form textarea,form select{width:100%;padding:14px;margin-bottom:15px;border:1px solid #ddd;font:inherit;outline:none}
+form input:focus,form textarea:focus,form select:focus{border-color:var(--gold)}form textarea{min-height:130px;resize:vertical}
+footer{background:var(--dark);color:#fff;padding:50px 20px 20px}.footer-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+footer h3{color:var(--gold);margin-bottom:15px}footer p,footer a{color:#bbb;font-size:14px;text-decoration:none}footer a{display:block;margin:8px 0}footer a:hover{color:var(--gold)}
+.copyright{max-width:1150px;margin:40px auto 0;padding-top:20px;border-top:1px solid #333;text-align:center;color:#888;font-size:13px}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:28px;z-index:999;box-shadow:0 5px 20px rgba(0,0,0,.25)}
+@media(max-width:800px){.menu{display:block}.nav-links{position:absolute;top:75px;left:0;width:100%;background:var(--dark);flex-direction:column;text-align:center;padding:20px;display:none}.nav-links.active{display:flex}.about-grid,.contact-grid{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}}
+@media(max-width:500px){section{padding:65px 15px}.services-grid,.gallery-grid,.why-grid{grid-template-columns:1fr}.hero h1{font-size:45px}.section-heading h2,.about-text h2,.cta h2{font-size:34px}}
+</style>
+</head>
+<body>
+<header><nav>
+<a href="#home" class="logo">SMAX<span>CREATIVE EVENTS</span></a>
+<div class="menu" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></header>
+
+<section class="hero" id="home"><div class="hero-content">
+<small>Creating beautiful memories</small><h1>Your Event.<br><span>Our Creativity.</span></h1>
+<p>Welcome to Smax Creative Events — where elegant designs, beautiful decorations and unforgettable celebrations come together.</p>
+<div class="buttons"><a href="#contact" class="btn btn-gold">Book Your Event</a><a href="#gallery" class="btn btn-outline">View Our Work</a></div>
+</div></section>
+
+<section class="about" id="about"><div class="container"><div class="about-grid">
+<div class="about-image"></div><div class="about-text"><h2>We Create <span>Unforgettable</span> Moments</h2>
+<p>At Smax Creative Events, we believe every celebration deserves to look extraordinary.</p>
+<p>From intimate gatherings to large weddings and outdoor celebrations, we transform spaces into beautiful experiences that reflect your personality and vision.</p>
+<p>Our goal is simple: to make your special occasion beautiful, memorable and stress-free.</p>
+<a href="#contact" class="btn btn-gold">Let's Create Together</a></div>
+</div></div></section>
+
+<section id="services"><div class="container"><div class="section-heading"><small>What We Do</small><h2>Our Services</h2><p>Professional event decoration and creative styling for celebrations of all kinds.</p></div>
+<div class="services-grid">
+<div class="service-card"><div class="service-icon">💍</div><h3>Wedding Decoration</h3><p>Elegant wedding styling, reception decoration, stage designs, tables and beautiful finishing touches.</p></div>
+<div class="service-card"><div class="service-icon">🎉</div><h3>Birthday Events</h3><p>Creative birthday themes, backdrops, balloon styling and memorable party decorations.</p></div>
+<div class="service-card"><div class="service-icon">✨</div><h3>Outdoor Events</h3><p>Beautiful outdoor event decoration designed to transform your chosen space into an amazing venue.</p></div>
+<div class="service-card"><div class="service-icon">🏢</div><h3>Corporate Events</h3><p>Professional event styling for corporate celebrations, launches, dinners and special occasions.</p></div>
+<div class="service-card"><div class="service-icon">🌸</div><h3>Traditional Events</h3><p>Stylish decoration for traditional ceremonies and cultural celebrations.</p></div>
+<div class="service-card"><div class="service-icon">🎨</div><h3>Custom Styling</h3><p>Have a unique idea? We work with you to create a decoration concept tailored to your event.</p></div>
+</div></div></section>
+
+<section class="gallery" id="gallery"><div class="container"><div class="section-heading"><small>Our Portfolio</small><h2>Beautiful Events We've Created</h2><p>Our latest decoration work.</p></div>
+<div class="gallery-grid">
+<div class="gallery-item"><img src="92375.jpg" alt="Smax Creative Events decoration"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=900&q=85" alt="Wedding decoration"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85" alt="Wedding reception"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=900&q=85" alt="Event decoration"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=85" alt="Event setup"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85" alt="Decorated venue"></div>
+</div></div></section>
+
+<section><div class="container"><div class="section-heading"><small>Why Choose Us</small><h2>Making Every Celebration Special</h2></div>
+<div class="why-grid">
+<div class="why-card"><strong>01</strong><h3>Creative</h3><p>Unique ideas designed around your event.</p></div>
+<div class="why-card"><strong>02</strong><h3>Professional</h3><p>Careful planning and quality execution.</p></div>
+<div class="why-card"><strong>03</strong><h3>Beautiful</h3><p>Attention to detail from beginning to end.</p></div>
+<div class="why-card"><strong>04</strong><h3>Reliable</h3><p>We take your special moments seriously.</p></div>
+</div></div></section>
+
+<section class="cta"><div class="container"><h2>Planning Your Next Event?</h2><p>Tell us about your event and let's turn your vision into something beautiful.</p><div class="buttons"><a href="#contact" class="btn btn-gold">Get a Quote</a></div></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="section-heading"><small>Let's Talk</small><h2>Book Smax Creative Events</h2><p>Send us your event details and we'll get back to you.</p></div>
+<div class="contact-grid"><div class="contact-info"><h2>Let's Make Your Event Beautiful.</h2><p>Whether you're planning a wedding, birthday, corporate event or outdoor celebration, we'd love to hear from you.</p>
+<div class="contact-item"><strong>📞 Phone</strong><p><a href="tel:09030652842">09030652842</a></p></div>
+<div class="contact-item"><strong>💬 WhatsApp</strong><p><a href="https://wa.me/2349030652842" target="_blank">+234 903 065 2842</a></p></div>
+<div class="contact-item"><strong>📧 Email</strong><p><a href="mailto:stevenmicheal190@gmail.com">stevenmicheal190@gmail.com</a></p></div>
+<div class="contact-item"><strong>📍 Location</strong><p>Ibadan, Oyo State, Nigeria</p></div></div>
+<form id="bookingForm"><input type="text" id="name" placeholder="Your Name" required><input type="tel" id="phone" placeholder="Phone Number" required>
+<select id="eventType" required><option value="">Select Event Type</option><option>Wedding</option><option>Birthday</option><option>Traditional Event</option><option>Corporate Event</option><option>Outdoor Event</option><option>Other</option></select>
+<input type="date" id="eventDate"><input type="text" id="guests" placeholder="Expected Number of Guests"><textarea id="message" placeholder="Tell us about your event..."></textarea>
+<button type="submit" class="btn btn-gold">Send Booking Request</button></form></div></div></section>
+
+<footer><div class="footer-grid"><div><h3>SMAX CREATIVE EVENTS</h3><p>Creating beautiful spaces and unforgettable memories for your special occasions.</p></div>
+<div><h3>Quick Links</h3><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+<div><h3>Contact</h3><a href="tel:09030652842">Call: 09030652842</a><a href="https://wa.me/2349030652842" target="_blank">WhatsApp</a></div></div>
+<div class="copyright">© <span id="year"></span> Smax Creative Events. All Rights Reserved.</div></footer>
+
+<a class="whatsapp" href="https://wa.me/2349030652842" target="_blank" aria-label="Chat with Smax Creative Events on WhatsApp">☎</a>
+
+<script>
+function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
+document.querySelectorAll(".nav-links a").forEach(link=>link.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("bookingForm").addEventListener("submit",function(e){
+e.preventDefault();
+const name=document.getElementById("name").value,phone=document.getElementById("phone").value,eventType=document.getElementById("eventType").value,date=document.getElementById("eventDate").value,guests=document.getElementById("guests").value,message=document.getElementById("message").value;
+const text=`Hello Smax Creative Events,%0A%0AI would like to make an event booking.%0A%0AName: ${name}%0APhone: ${phone}%0AEvent: ${eventType}%0ADate: ${date||"Not specified"}%0AGuests: ${guests||"Not specified"}%0ADetails: ${message||"None"}%0A%0AThank you.`;
+window.open(`https://wa.me/2349030652842?text=${text}`,"_blank");
+});
+</script>
+</body>
+</html>
